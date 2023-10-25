@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.text.DecimalFormat;
 
 public class MovieTicket {
    public static void main(String args[]) {
@@ -8,7 +7,7 @@ public class MovieTicket {
       
       int age;
       double price;
-      String county = "";
+      char county;
       
       System.out.println("Please enter your age: ");
       age = cin.nextInt();
@@ -19,23 +18,23 @@ public class MovieTicket {
       };
       
       System.out.println("Please enter what county you live in: ");
-      county = cin.next();
+      county = cin.next().toLowerCase().charAt(0);
       
       
-      if(county.equalsIgnoreCase("King")) {
+      if(county == 'k') {
          price = 30.0;
       } else {
          price = 40.0;
       };
       
-      if(county.equalsIgnoreCase("King") && age < 14 && age >= 5) {
-         price = (30.0 * 0.82)*100.00;
-         price = price / 100.00;
+      if(county == 'k' && age < 14 && age >= 5) {
+         price = (30.0 * 0.82);
+         price = price;
       } else if (age < 14) {
          price = 40.0 * 0.82;
       }
       
-      if(county.equalsIgnoreCase("King") && age >= 65) {
+      if(county == 'k' && age >= 65) {
          price = (30.0/2);
       } else if(age >= 65) {
          price = (40.0/2);
@@ -45,6 +44,7 @@ public class MovieTicket {
          price = 0.0;
       }
       
-      System.out.println("Your price is: $" + price);
+      System.out.printf("Your price is: $%.2f", price);
+      System.out.println();
    }
 }
