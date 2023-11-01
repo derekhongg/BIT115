@@ -28,8 +28,7 @@ public class EmployeeHourlyPay {
             System.out.println("Employee #1 gross pay: $" + ((hourlyPay * 40) + overTime));
         } else {
             System.out.println("Employee #1 gross pay: $" + (hourlyPay * hoursWorked));
-        }
-        ;
+        };
 
         System.out.print("Enter the hourly rate for Employee #2: ");
         hourlyPay = in.nextDouble();
@@ -44,8 +43,7 @@ public class EmployeeHourlyPay {
             System.out.println("Employee #2 gross pay: $" + ((hourlyPay * 40) + overTime));
         } else {
             System.out.println("Employee #2 gross pay: $" + (hourlyPay * hoursWorked));
-        }
-        ;
+        };
 
         System.out.print("Enter the hourly rate for Employee #3: ");
         hourlyPay = in.nextDouble();
@@ -60,8 +58,7 @@ public class EmployeeHourlyPay {
             System.out.println("Employee #3 gross pay: $" + ((hourlyPay * 40) + overTime));
         } else {
             System.out.println("Employee #3 gross pay: $" + (hourlyPay * hoursWorked));
-        }
-        ;
+        };
 
         System.out.print("Enter the hourly rate for Employee #4: ");
         hourlyPay = in.nextDouble();
@@ -76,8 +73,6 @@ public class EmployeeHourlyPay {
             System.out.println("Employee #4 gross pay: $" + ((hourlyPay * 40) + overTime));
         } else {
             System.out.println("Employee #4 gross pay: $" + (hourlyPay * hoursWorked));
-        }
-        ;
-
+        };
     }
 }
