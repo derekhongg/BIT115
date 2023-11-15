@@ -9,7 +9,7 @@ public class EmployeeHourlyPay {
     public static void main(String args[]) {
         double hourlyPay = 13.69;
         int hoursWorked = 0;
-        double overTime = 0.0;
+        double overTime = 1;
 
         Scanner in = new Scanner(System.in);
 
