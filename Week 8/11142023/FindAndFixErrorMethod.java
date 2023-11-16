@@ -4,7 +4,7 @@ class FindAndFixErrorMethod{
 	public static void main(String[] args)	{
 		Scanner in=new Scanner(System.in);
 		System.out.print("Enter a String and I will tell you the number of occurrences of every letter  ");
-		String temp = in.next(); //incorrect type
+		String temp = in.nextLine(); //incorrect type
 		int count;
 		for(char c='a';c<='z';c++) {
 			countOccurrences(temp, c);	  // incorrect parameters
@@ -21,7 +21,7 @@ class FindAndFixErrorMethod{
          }
 		}
 		if(count>0) {
-         System.out.println(c + " appears " + count + " times");
+         System.out.println(c + " appears " + count + " times"); //needs to be it's own block 
       }
 	}
 }
