@@ -21,7 +21,7 @@ public class TestCommision {
             commissionRate += (salesAmt - 5000) * 0.10;
         }
         // Set first 5000 salesAmt to 8 percent, then nest 5000 to 10 percent
-        // then remaining (salesAmt-10000) to 12 percent
+        // then the remaining sales amount to 10 percent
         else if (salesAmt >= 10000.01) {
             commissionRate = 5000 * 0.08 + 5000 * 0.10;
             commissionRate += (salesAmt - 10000) * 0.12;
